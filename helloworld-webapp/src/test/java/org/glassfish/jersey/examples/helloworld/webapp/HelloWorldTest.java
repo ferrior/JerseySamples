@@ -68,7 +68,7 @@ public class HelloWorldTest extends JerseyTest {
 
     @Test
     public void testClientStringResponse() {
-        String s = target().path("old/helloworld").request().get(String.class);
+        String s = target().path(App.ROOT_PATH).request().get(String.class);
         assertEquals("Hello World!", s);
     }
 }

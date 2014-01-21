@@ -46,7 +46,7 @@ import javax.ws.rs.Produces;
 /**
  * @author Pavel Bucek (pavel.bucek at oracle.com)
  */
-@Path("/helloworld")
+@Path("helloworld")
 public class HelloWorldResource {
 
     @GET
