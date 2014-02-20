@@ -46,7 +46,7 @@ import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.glassfish.jersey.grizzly2.servlet.GrizzlyWebContainerFactory;
+//import org.glassfish.jersey.grizzly2.servlet.GrizzlyWebContainerFactory;
 import org.glassfish.jersey.server.ServerProperties;
 import org.glassfish.jersey.servlet.ServletContainer;
 
@@ -68,12 +68,12 @@ public class App {
             initParams.put(
                     ServerProperties.PROVIDER_PACKAGES,
                     HelloWorldResource.class.getPackage().getName());
-            final HttpServer server = GrizzlyWebContainerFactory.create(BASE_URI, ServletContainer.class, initParams);
+           // final HttpServer server = GrizzlyWebContainerFactory.create(BASE_URI, ServletContainer.class, initParams);
 
             System.out.println(String.format("Application started.%nTry out %s%s%nHit enter to stop it...",
                     BASE_URI, ROOT_PATH));
             System.in.read();
-            server.shutdownNow();
+          //  server.shutdownNow();
         } catch (IOException ex) {
             Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
         }

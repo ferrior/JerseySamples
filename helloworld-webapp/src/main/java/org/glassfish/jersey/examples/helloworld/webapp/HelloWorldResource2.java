@@ -18,6 +18,6 @@ public class HelloWorldResource2 {
     @Produces("text/html")
     public String getHello() {
     	HelloWorldResource hr = ctx.getResource(HelloWorldResource.class);
-        return hr.getHello() + " Hello World, too!";
+        return hr.getHello() + " Hello World, tooa!";
     }
 }

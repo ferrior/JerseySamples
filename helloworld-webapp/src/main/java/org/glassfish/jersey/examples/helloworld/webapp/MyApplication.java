@@ -55,6 +55,8 @@ public class MyApplication extends Application {
         // register root resource
         classes.add(HelloWorldResource.class);
         classes.add(HelloWorldResource2.class);
+        classes.add(HelloJsonResource.class);
+        
         return classes;
     }
 }

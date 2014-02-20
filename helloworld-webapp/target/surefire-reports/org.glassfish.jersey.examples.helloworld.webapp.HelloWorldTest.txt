@@ -1,10 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.glassfish.jersey.examples.helloworld.webapp.HelloWorldTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.972 sec <<< FAILURE!
-testClientStringResponse(org.glassfish.jersey.examples.helloworld.webapp.HelloWorldTest)  Time elapsed: 0.959 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<Hello World![]> but was:<Hello World![ Hello World, too!]>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at org.glassfish.jersey.examples.helloworld.webapp.HelloWorldTest.testClientStringResponse(HelloWorldTest.java:72)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.136 sec

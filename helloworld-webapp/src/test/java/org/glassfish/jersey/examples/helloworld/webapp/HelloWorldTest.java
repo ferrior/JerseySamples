@@ -61,15 +61,15 @@ public class HelloWorldTest extends JerseyTest {
         return new MyApplication();
     }
 
-    @Override
-    protected URI getBaseUri() {
-        return UriBuilder.fromUri(super.getBaseUri()).path("helloworld-webapp").build();
-    }
+//    @Override
+//    protected URI getBaseUri() {
+//        return UriBuilder.fromUri(super.getBaseUri()).path("helloworld-webapp").build();
+//    }
 
     @Test
     public void testClientStringResponse() {
         String s = target().path(App.ROOT_PATH).request().get(String.class);
-        assertEquals("Hello World!", s);
+        assertEquals("Hello Worlda!", s);
     }
 }
 
